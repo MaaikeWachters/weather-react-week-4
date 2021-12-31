@@ -1,38 +1,157 @@
-.App {
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-image: url("../public/pictures/dark_shiny.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #dcdba8;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin-bottom: 24px;
+}
+strong {
+  font-size: 80px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+.weather {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.header-text,
+.search-form-text {
+  color: #46b1c9;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search-form-text {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.weather-temperature .units {
+  font-size: 16px;
+  position: relative;
+  top: -16px;
+  margin-left: 12px;
+  color: #dcdba8;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  border: 3px solid #f3a9cc;
+  border-radius: 32px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer {
   text-align: center;
+  padding-top: 16px;
+  margin-bottom: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-forecast {
+  margin: 32px auto 24px auto;
+  text-align: center;
+  color: #dcdba8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-forecast-day {
+  font-size: 16px;
+  padding-bottom: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.forecast-image {
+  width: 40px;
+  height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+  margin-top: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-forecast-temperature {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.credits {
+  color: #f3a9cc;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.credits a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #46b1c9;
+}
+
+.btn-primary {
+  background-color: #46b1c9;
+  border: #46b1c9;
+}
+
+#city {
+  color: #dcdba8;
+  font-size: 64px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#date {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #dcdba8;
+}
+
+#greeting {
+  padding: 32px;
+  text-align: center;
+  color: #f3a9cc;
+  font-size: 80px;
+  font-family: "Codystar", cursive;
+}
+
+#weather-description {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+#temperature {
+  color: #dcdba8;
+  margin-left: 16px;
 }
