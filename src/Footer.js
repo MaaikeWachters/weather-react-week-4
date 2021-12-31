@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="credits">
-        <a href="https://github.com/MaaikeWachters/vanilla-weather-app">
+        <a href="https://github.com/MaaikeWachters/weather-react-week-4">
           Open-source coded
         </a>
         &nbsp; with 💖&nbsp; by Maaike Wachters
