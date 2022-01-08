@@ -7,8 +7,8 @@ export default function CurrentConditions() {
   return (
     <div>
       <div className="row">
-        <CurrentCity city="Rotterdam" />
-        <CurrentDate dayOfWeek="Saturday" month="December" date={18} />
+        <CurrentCity city="Current City" />
+        <CurrentDate dayOfWeek="Current Day" month="Current Month" date="Current Date" />
       </div>
 
       <CurrentWeather

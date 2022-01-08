@@ -1,8 +1,8 @@
 import "./App.css";
-import SearchForm from "../my-weather-app/src/SearchForm";
+import SearchForm from "./SearchForm";
 import Footer from "./Footer";
 import Forecast from "./Forecast";
-import CurrentConditions from "../my-weather-app/src/CurrentConditions";
+import CurrentConditions from "./CurrentConditions";
 import Greeting from "./Greeting";
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <div className="row">
-          <Greeting timeOfDay="Good afternoon" />
+          <Greeting />
         </div>
 
         <div className="weather-app-wrapper">
