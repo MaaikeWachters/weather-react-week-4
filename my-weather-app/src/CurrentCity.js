@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function CurrentCity(props) {
-  const [city, setCity] = useState{props.city};
+  const [city, setCity] = useState(props.city);
 
  function getApiUrl(position) {
     let latitude = position.coords.latitude;
@@ -11,11 +11,12 @@ export default function CurrentCity(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(displayCityName);
+     
   }
   navigator.geolocation.getCurrentPosition(getApiUrl);
-  
-  function displayCityName() {
-    setCity();
+
+  function displayCityName(response) {
+    setCity(response.data.name);
   }
     
     return (
