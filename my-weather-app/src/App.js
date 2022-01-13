@@ -1,5 +1,5 @@
 import "./App.css";
-import SearchForm from "./SearchForm";
+
 import Footer from "./Footer";
 import Forecast from "./Forecast";
 import CurrentConditions from "./CurrentConditions";
@@ -16,7 +16,6 @@ export default function App() {
         <div className="weather-app-wrapper">
           <CurrentConditions />
           <Forecast />
-          <SearchForm />
         </div>
 
         <Footer />
