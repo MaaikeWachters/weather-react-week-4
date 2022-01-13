@@ -7,7 +7,7 @@ export default function CurrentCity(props) {
  function getApiUrl(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
-    let apiKey = "8349c141fbb6f5894a4cba912fc31bd0";
+    let apiKey = "ca5af28648d86b7925348bb9fb85cd3a";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(displayCityName);
